@@ -5,14 +5,20 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "remotion:studio": "remotion studio remotion/index.ts",
+    "remotion:render": "remotion render remotion/index.ts WebsitePromo --output out/video.mp4"
   },
   "dependencies": {
+    "@remotion/cli": "^4.0.451",
+    "@remotion/player": "^4.0.451",
+    "@remotion/renderer": "^4.0.451",
     "next": "14.2.5",
     "react": "^18",
     "react-dom": "^18",
-    "zustand": "^4.5.2",
-    "uuid": "^9.0.1"
+    "remotion": "^4.0.451",
+    "uuid": "^9.0.1",
+    "zustand": "^4.5.2"
   },
   "devDependencies": {
     "@types/node": "^20",
